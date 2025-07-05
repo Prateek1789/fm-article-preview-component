@@ -29,7 +29,7 @@ const Card = () => {
             <div className="author h-full flex items-center gap-3 lg:gap-6">
                 <img src={Images.avatar} alt="Author's Avatar" className="w-10 h-10 rounded-full lg:h-12 lg:w-12" />
                 <div className='flex flex-col gap-0'>   
-                    <h4 className='text-sm font-bold text-Grayish-Blue-Dark lg:text-lg'>Michelle Appleton</h4>
+                    <h2 className='text-sm font-bold text-Grayish-Blue-Dark lg:text-lg'>Michelle Appleton</h2>
                     <time dateTime="28-6-2020" className='text-[0.8rem] text-Dark-Blue-Pale lg:text-[0.9rem]'>28 June 2020</time>
                 </div>
             </div>
@@ -41,7 +41,7 @@ const Card = () => {
                 onClick={toggleShare}>
                 <img src={Images.share} alt="Share icon" fill='var(--color-white)' aria-hidden='true' className='lg:w-4 lg:h-4' />
             </button>
-            <div className={`share-tab w-full h-full left-0 bottom-0 bg-Grayish-Blue-Dark absolute ${isShareVisible ? 'flex' : 'hidden'} items-center pl-8 rounded-bl-xl rounded-br-xl lg:w-[340px] lg:h-[4.75rem] lg:justify-center lg:p-[1rem_2rem] lg:-top-21 lg:left-84 lg:rounded-tl-xl lg:rounded-tr-xl`}>
+            <div className={`share-tab w-full h-full left-0 bottom-0 bg-Grayish-Blue-Dark absolute ${isShareVisible ? 'flex' : 'hidden'} items-center pl-8 rounded-bl-xl rounded-br-xl lg:w-[21.25rem] lg:h-[4.75rem] lg:justify-center lg:p-[1rem_2rem] lg:-top-21 lg:left-84 lg:rounded-tl-xl lg:rounded-tr-xl`}>
                 <ul className='list-none flex gap-4 lg:gap-6'>
                     <li className='text-Grayish-Blue mr-1 text-sm tracking-[0.25rem] lg:text-lg'>SHARE</li>
                     <li>

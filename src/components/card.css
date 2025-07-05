@@ -21,8 +21,8 @@
         content: "";
         top: 100%;
         left: 50%;
-        height: 20px;
-        width: 20px;
+        height: 1.25rem;
+        width: 1.25rem;
         position: absolute;
         background-color: var(--color-Grayish-Blue-Dark);
         transform: rotate(135deg) translate(-20%, 50%);
