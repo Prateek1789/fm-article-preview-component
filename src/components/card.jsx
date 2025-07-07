@@ -33,13 +33,15 @@ const Card = () => {
                     <time dateTime="28-6-2020" className='text-[0.8rem] text-Dark-Blue-Pale lg:text-[0.9rem]'>28 June 2020</time>
                 </div>
             </div>
-            <button 
-                type="button"
-                className={`w-8 h-8 rounded-full bg-Grayish-Blue-Light flex items-center justify-center lg:cursor-pointer z-[2] lg:w-12 lg:h-12`} 
-                aria-label='Share Button' 
-                aria-pressed={`${isShareVisible ? 'true' : 'false'}`}
-                onClick={toggleShare}>
-                <img src={Images.share} alt="Share icon" fill='var(--color-white)' aria-hidden='true' className='lg:w-4 lg:h-4' />
+            <button type="button" 
+                    className={`w-8 h-8 rounded-full ${isShareVisible ? 'bg-Dark-Blue-Pale' : 'bg-Grayish-Blue-Light'} flex items-center justify-center lg:cursor-pointer z-[2] lg:w-12 lg:h-12`} 
+                    aria-label='Share Button' 
+                    aria-pressed={`${isShareVisible ? 'true' : 'false'}`} 
+                    onClick={toggleShare}>
+                <img src={Images.share} 
+                     alt="Share icon" 
+                     aria-hidden='true' 
+                     className={`lg:w-4 lg:h-4 ${isShareVisible ? 'brightness-0 invert' : 'brightness-100'}`} />
             </button>
             <div className={`share-tab w-full h-full left-0 bottom-0 bg-Grayish-Blue-Dark absolute ${isShareVisible ? 'flex' : 'hidden'} items-center pl-8 rounded-bl-xl rounded-br-xl lg:w-[21.25rem] lg:h-[4.75rem] lg:justify-center lg:p-[1rem_2rem] lg:-top-21 lg:left-84 lg:rounded-tl-xl lg:rounded-tr-xl`}>
                 <ul className='list-none flex gap-4 lg:gap-6'>
